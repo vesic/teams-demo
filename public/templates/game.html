@@ -1,0 +1,35 @@
+<h3>{{ game.single.teams[0].company}}</h3>
+<table class="table">
+  <thead>
+    <tr>
+      <td>image</td>
+      <td>name</td>
+      <td>number</td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr ng-repeat="player in game.single.teams[0].players">
+      <td><a href="#action"><img ng-src="{{player.picture}}" alt=""></a></td>
+      <td>{{player.name}}</td>
+      <td>{{player.id}}</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3>{{ game.single.teams[1].company}}</h3>
+<table class="table">
+  <thead>
+    <tr>
+      <td>image</td>
+      <td>name</td>
+      <td>number</td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr ng-repeat="player in game.single.teams[1].players">
+      <td><a href="#action"><img ng-src="{{player.picture}}" alt=""></a></td>
+      <td>{{player.name}}</td>
+      <td>{{player.id}}</td>
+    </tr>
+  </tbody>
+</table>

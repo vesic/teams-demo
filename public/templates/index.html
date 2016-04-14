@@ -1,0 +1,7 @@
+<h1>Index.html</h1>
+
+<div class="panel panel-info text-center" ng-repeat="game in main.games">
+  <div class="panel-heading">{{game.registered}}</div>
+  <div class="panel-body"><a class="btn btn-primary btn-block" href="#games/{{game.id}}">{{game.teams[0].company}} vs {{game.teams[1].company}}</a></div>
+  <div class="panel-footer">{{game.address}}</div>
+</div>
