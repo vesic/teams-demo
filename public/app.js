@@ -40,9 +40,9 @@ function GameController($http, $routeParams) {
     .then(function(res) {
       var games = angular.fromJson(res);
       console.log(games.data);
-      game.single = _.find(games.data, function(single) {
+      game.single = games.data.filter(function(single) {
         return single.id == $routeParams.id;
-      });
+      })[0];
     })
 }
 
