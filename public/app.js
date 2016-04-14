@@ -1,4 +1,4 @@
-angular.module('app', ['ngRoute'])
+angular.module('app', ['ngRoute', 'firebase'])
   .run(function() {
     console.log('works');
   })
